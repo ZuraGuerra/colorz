@@ -8,12 +8,12 @@
   function angularRoutes ($stateProvider, $urlRouterProvider) {
     // Define front-end angular routes.
 
-    $urlRouterProvider.otherwise("/public");
+    $urlRouterProvider.otherwise("/");
 
     $stateProvider
 
     .state('public', {
-      url: "/public",
+      url: "/",
       controller: 'PublicCtrl',
       template: JST['assets/templates/public.html']()
     });
