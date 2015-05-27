@@ -1,0 +1,86 @@
+//	I M P O R T S
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+@import "allgo-fonts";
+// Linea Music: "linea-music" (RT)
+// Linea Weather: "linea-weather" (Fav)
+
+//	V A R I A B L E S
+
+$main-color: #1B56F0; //blue
+$white: #EAEAEA; //grayish white
+$true-white: #fff; //true white
+$true-black: #000; //true black
+
+
+
+
+//	S T Y L E S
+
+body {
+	background-color: $white;
+	font-size: 100%;
+}
+
+.blue-bg {
+	background-color: $main-color;
+	color: $white;
+	font-size: 0.8em;
+	font-family: avenir-light;
+}
+
+.true-white-bg {
+	background-color: $true-white;
+	color: $true-black;
+	font-size: 1.1em;
+	font-family: avenir-medium;
+}
+
+.container {
+
+	@include outer-container;
+
+	.card {
+		@include span-columns(3);
+		@include omega(4n);
+		background-color: $true-white;
+		margin-bottom: 30px;
+		padding: 25px;
+
+		p {
+
+
+
+		}
+
+
+	}
+
+
+}
+
+.tweet,
+.user,
+.date,
+.rt-fav {
+	color: $true-black;
+	font-size: 1em;
+	font-family: avenir-roman;
+}
+
+.rt {
+
+	font-family: linea-music;
+	font-size: 1.6em;
+	color: $main-color;
+
+}
+
+.fav {
+
+	font-family: linea-weather;
+	font-size: 1.6em;
+	color: $main-color;
+}

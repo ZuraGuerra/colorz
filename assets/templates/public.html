@@ -1,8 +1,20 @@
-This is public: Zura {{ message }}
+<div class="true-white-bg">
+	<br>
+	<h2>{{ hashtag }}.allgo</h2>
+	<br>
+	<h4>{{ intro }} </h4>
+</div>
 
+<br>
 
-<div ng-repeat="tweet in tweets">
-  {{ tweet.text }}
-  {{ tweet.created_at }}
-  <a href="http://twitter.com/{{ tweet.user.screen_name }}">@{{ tweet.user.screen_name }}</a>
+<div class="container">
+	<div ng-repeat="tweet in tweets" class= "card">
+		
+			<center><p class="rt-fav"><span class="rt">x</span>{{ tweet.retweet_count }}<span class="fav">&#57394;</span>{{ tweet. favorite_count }}</p></center>
+			<a href="http://twitter.com/{{ tweet.user.screen_name }}"><p class="user">@{{ tweet.user.screen_name }}</p></a>
+	  		<p class="tweet">{{ tweet.text }}</p>
+			<img ng-src="{{ tweet.entities.media[0].media_url }}">
+
+		
+	</div>
 </div>
