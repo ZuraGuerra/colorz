@@ -1,0 +1,6 @@
+{
+  "name": "colorz",
+  "dependencies": {
+    "angular": "~1.3.15"
+  }
+}
