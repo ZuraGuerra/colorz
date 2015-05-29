@@ -13,7 +13,7 @@ $main-color: #1B56F0; //blue
 $white: #EAEAEA; //grayish white
 $true-white: #fff; //true white
 $true-black: #000; //true black
-
+$light-gray: #ADADAD; //light gray
 
 
 
@@ -24,18 +24,26 @@ body {
 	font-size: 100%;
 }
 
+h2,
+h4 {
+	font-family: avenir-medium;
+	font-size: 1.1em;
+
+}
 .blue-bg {
 	background-color: $main-color;
-	color: $white;
+	color: $true-white;
 	font-size: 0.8em;
 	font-family: avenir-light;
+	box-shadow: 1px 1px 1px 1px $light-gray;
+	margin-bottom: 1px;
 }
 
 .true-white-bg {
 	background-color: $true-white;
 	color: $true-black;
 	font-size: 1.1em;
-	font-family: avenir-medium;
+	box-shadow: 1px 1px 1px 1px $light-gray;
 }
 
 .container {
@@ -46,17 +54,18 @@ body {
 		@include span-columns(3);
 		@include omega(4n);
 		background-color: $true-white;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 		padding: 25px;
-
-		p {
-
-
-
-		}
+		box-shadow: 0px 0px 1px 1px $light-gray;
 
 
 	}
+
+
+	.card:hover {
+		box-shadow: 1px 1px 2px 2px $light-gray;
+	}
+
 
 
 }
@@ -74,7 +83,7 @@ body {
 
 	font-family: linea-music;
 	font-size: 1.6em;
-	color: $main-color;
+	color: $light-gray;
 
 }
 
@@ -82,5 +91,5 @@ body {
 
 	font-family: linea-weather;
 	font-size: 1.6em;
-	color: $main-color;
+	color: $light-gray;
 }

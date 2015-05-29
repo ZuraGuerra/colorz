@@ -17,13 +17,35 @@ var client = new Twitter({
 module.exports = {
 
 	list: function (req, res) {
-    var params = {screen_name: 'grafofilia'};
+
+    var params = {screen_name: 'allgomx'};
     client.get('statuses/user_timeline', params, function(error, tweets, response){
       if (!error) {
         res.json(tweets);
       }
     });
-  }
 
+
+    /*var params = {q: 'bot2bot'};
+    client.get('search/tweets', params, function(error, tweets, response){
+      if (!error) {
+        res.json(tweets);
+      }
+    });*/
+
+  
+
+    /*client.stream('statuses/filter', {track: 'bot2bot'},  function(stream){
+      stream.on('data', function(tweet) {
+        console.log(tweets.text);
+        res.json(tweets);
+      });
+
+      stream.on('error', function(error) {
+        console.log(error);
+      });
+    });*/
+
+  }
 };
 

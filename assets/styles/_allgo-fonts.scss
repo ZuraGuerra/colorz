@@ -1,9 +1,13 @@
 // F O N T S
 // In use:
-//	o Linea (RT and fav icons)
-//		oo Music
-//		oo Weather
+//	o Linea
+//		oo Music (RT icon)
+//		oo Weather (Fav icon)
 //	o Avenir
+//		oo Light (Navbar)
+//		oo Medium ()
+//		oo Roman ()
+//	o Nexa Bold (Titles)
 
 @charset "UTF-8";
 
@@ -471,6 +475,20 @@
     url("fonts/avenirltstd-roman.woff") format("woff"),
     url("fonts/avenirltstd-roman.ttf") format("truetype"),
     url("fonts/avenirltstd-roman.svg#avenirltstd-roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+//		NEXA BOLD
+
+@font-face {
+  font-family: "nexa-bold";
+  src:url("fonts/Nexa-Bold.eot");
+  src:url("fonts/Nexa-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Nexa-Bold.woff") format("woff"),
+    url("fonts/Nexa-Bold.ttf") format("truetype"),
+    url("fonts/Nexa-Bold.svg#Nexa-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
 
