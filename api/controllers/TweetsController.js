@@ -26,7 +26,7 @@ function twitterSubscribe() {
     current_stream = stream;
 
     stream.on('data', function(tweet) {
-      console.log('Got new tweet', tweet);
+      //console.log('Got new tweet', tweet);
       // Send this new tweet to the browser via websockets, on event 'new_tweet'
       sails.sockets.blast('new_tweet', tweet);
     });
@@ -41,6 +41,7 @@ function twitterSubscribe() {
 
 function twitterUnsubscribe() {
   if (current_stream != null) {
+    console.log("Destroying twitter subscription");
     current_stream.destroy();
   }
 }
