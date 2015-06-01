@@ -18,7 +18,7 @@ module.exports = {
 
 	list: function (req, res) {
 
-    var params = {screen_name: 'allgomx'};
+    var params = {screen_name: 'allgomx', count: 200};
     client.get('statuses/user_timeline', params, function(error, tweets, response){
       if (!error) {
         res.json(tweets);
