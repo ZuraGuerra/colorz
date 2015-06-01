@@ -14,28 +14,29 @@ var client = new Twitter({
   access_token_secret: 'MovZudSKwA7zJ436OvloI4ydxNeply6w8FveFBUGpmAFW'
 });
 
+
+// Subscribe and get new tweets, stream them via websockets.
+client.stream('statuses/filter', {track: 'twitter'},  function(stream){
+  stream.on('data', function(tweet) {
+    console.log('Got new tweet', tweet);
+    // Send this new tweet to the browser via websockets, on event 'new_tweet'
+    sails.sockets.blast('new_tweet', tweet);
+  });
+
+  stream.on('error', function(error) {
+    console.log(error);
+  });
+});
+
+
 module.exports = {
-
 	list: function (req, res) {
-
     var params = {screen_name: 'allgomx', count: 200};
     client.get('statuses/user_timeline', params, function(error, tweets, response){
       if (!error) {
         res.json(tweets);
       }
     });
-
-    client.stream('statuses/filter', {track: 'allgomx'},  function(stream){
-      stream.on('data', function(tweet) {
-        // Send this new tweet to the browser via websockets, on event 'new_tweet'
-        sails.sockets.blast('new_tweet', tweet);
-      });
-
-      stream.on('error', function(error) {
-        console.log(error);
-      });
-    });
-
   }
 };
 
