@@ -25,26 +25,16 @@ module.exports = {
       }
     });
 
-
-    /*var params = {q: 'bot2bot'};
-    client.get('search/tweets', params, function(error, tweets, response){
-      if (!error) {
-        res.json(tweets);
-      }
-    });*/
-
-  
-
-    /*client.stream('statuses/filter', {track: 'bot2bot'},  function(stream){
+    client.stream('statuses/filter', {track: 'allgomx'},  function(stream){
       stream.on('data', function(tweet) {
-        console.log(tweets.text);
-        res.json(tweets);
+        // Send this new tweet to the browser via websockets, on event 'new_tweet'
+        sails.sockets.blast('new_tweet', tweet);
       });
 
       stream.on('error', function(error) {
         console.log(error);
       });
-    });*/
+    });
 
   }
 };
