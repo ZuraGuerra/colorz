@@ -13,7 +13,7 @@
 
     $http.get('/tweets/list').then(function (response) {
       console.log("Sails Backend responded: ", response);
-      $scope.tweets = response.data;
+      $scope.tweets = response.data.statuses;
     });
 
     io.socket.on('new_tweet', function (tweet) {

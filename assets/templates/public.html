@@ -1,13 +1,21 @@
+<title>{{ hashtag }}.allgo</title>
+
+<!-- I N T R O D U C T I O N   B E G I N S-->
 <div class="true-white-bg">
 	<center>
-	<h2>{{ hashtag }}.allgo</h2>
-	<h4>{{ intro }} </h4>
+	<br>
+	<h2 class="hashtag-allgo">{{ hashtag }}.allgo</h2>
+	<h4 class="intro">{{ intro }} </h4>
+	<br>
 	</center>
 </div>
+<!-- I N T R O D U C T I O N   E N D S -->
 
 <br>
 
+<!-- C A R D   S P A W N I N G   B E G I N S -->
 <div class="container">
+
 	<div ng-repeat="tweet in tweets" class= "card">
 		
 			<center>
@@ -18,7 +26,8 @@
 	  		<p class="tweet">{{ tweet.text }}</p>
 			<img ng-src="{{ tweet.entities.media[0].media_url }}">
 			<p class="rt-fav"><span class="rt">x</span>{{ tweet.retweet_count }}<span class="fav">&#57394;</span>{{ tweet. favorite_count }}</p>
-
 		
 	</div>
+
 </div>
+<!-- C A R D   S P A W N I N G   E N D S -->

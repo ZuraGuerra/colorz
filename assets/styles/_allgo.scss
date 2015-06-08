@@ -6,16 +6,20 @@
 @import "allgo-fonts";
 // Linea Music: "linea-music" (RT)
 // Linea Weather: "linea-weather" (Fav)
+// Avenir Medium: "avenir-medium" (Headers)
+// Avenir Light: "avenir-light" (Navbar)
+// Avenir Roman: "avenir-roman" (Content)
+// Nexa Bold: 
 
 
 
 //	V A R I A B L E S
 
-$main-color: #1B56F0; //blue
-$white: #EAEAEA; //grayish white
-$true-white: #fff; //true white
-$true-black: #000; //true black
-$light-gray: #ADADAD; //light gray
+$main-color: #1B56F0; // blue
+$white: #EAEAEA; // grayish white
+$true-white: #fff; // true white
+$true-black: #000; // true black
+$light-gray: #ADADAD; // light gray
 
 
 
@@ -33,11 +37,16 @@ h4 {
 
 }
 
+
 //			NAVBAR   B E G I N S
 
 .logo {
-	margin-top: 5px;
+	margin-top: 6px;
 	margin-left: 10px;
+}
+
+.margin-right {
+	margin-right: 7px;
 }
 
 .links-nav {
@@ -72,12 +81,25 @@ h4 {
 
 //			NAVBAR   E N D S
 
+//			INTRODUCTION  B E G I N S
+
 .true-white-bg {
 	background-color: $true-white;
 	color: $true-black;
 	font-size: 1.1em;
 	box-shadow: 1px 1px 1px 1px $light-gray;
 }
+
+.hashtag-allgo {
+}
+
+.intro {
+
+}
+
+//			INTRODUCTION    E N D S
+
+//			CARD    B E G I N S
 
 .container {
 
@@ -130,3 +152,5 @@ h4 {
 	font-size: 1.6em;
 	color: $light-gray;
 }
+
+//			CARD    E N D S
