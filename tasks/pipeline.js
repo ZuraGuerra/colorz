@@ -33,8 +33,11 @@ var jsFilesToInject = [
   'bower_components/angular/angular.js',
   'bower_components/angular-ui-router/release/angular-ui-router.js',
 
+  'js/dependencies/intense.js',
+
   'js/app.js',
-  'js/controllers.js'
+  'js/controllers.js',
+  'js/viewer.js',
 
 ];
 

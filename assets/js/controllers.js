@@ -7,8 +7,8 @@
 
   function PublicCtrl ($scope, $http) {
 
-    $scope.hashtag = "allgo";
-    $scope.intro = "allguish allgo"
+    $scope.hashtag = "browserDiscrimination";
+    $scope.intro = "Users feeling discriminated right now."
     $scope.tweets = [];
 
     $http.get('/tweets/list').then(function (response) {

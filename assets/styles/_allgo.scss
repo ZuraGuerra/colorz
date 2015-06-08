@@ -30,11 +30,16 @@ body {
 	font-size: 100%;
 }
 
-h2,
-h4 {
+h1 {
 	font-family: avenir-medium;
 	font-size: 1.1em;
+	margin-bottom: 10px;
 
+}
+
+h2 {
+	font-family: avenir-light;
+	font-size: 0.8em;
 }
 
 
@@ -69,7 +74,7 @@ h4 {
 .blue-bg {
 	background-color: $main-color;
 	color: $true-white;
-	font-size: 0.8em;
+	font-size: 0.6em;
 	font-family: avenir-light;
 	box-shadow: 1px 1px 1px 1px $light-gray;
 	margin-bottom: 1px;
@@ -127,15 +132,31 @@ h4 {
 
 .tweet,
 .user,
+.name,
 .date,
 .rt-fav {
 	color: $true-black;
 	font-size: 1em;
-	font-family: avenir-roman;
+	font-family: avenir-light;
 }
 
 .tweet {
-	margin-bottom: -20px;
+	margin-bottom: -10px;
+	font-size: 0.9em;
+}
+
+.name {
+	margin-top: 10px;
+} 
+
+.name,
+.user {
+	color: $main-color;
+	font-size: 1em;
+}
+
+.user {
+	margin-top:-30px;
 }
 
 .rt {
