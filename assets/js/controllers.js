@@ -7,8 +7,8 @@
 
   function PublicCtrl ($scope, $http) {
 
-    $scope.hashtag = "bot2bot";
-    $scope.intro = "Lovely bots talking to each other."
+    $scope.hashtag = "allgo";
+    $scope.intro = "allguish allgo"
     $scope.tweets = [];
 
     $http.get('/tweets/list').then(function (response) {

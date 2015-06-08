@@ -16,7 +16,7 @@ var client = new Twitter({
 
 
 // Subscribe and get new tweets, stream them via websockets.
-var stream_params = {track: 'bot2bot'}
+var stream_params = {track: 'allgo'}
 var current_stream = null;
 
 function twitterSubscribe() {
