@@ -16,8 +16,11 @@
       $scope.tweets = response.data.statuses;
     });
 
+
     io.socket.on('new_tweet', function (tweet) {
       console.log("OMG got a new tweet", tweet);
+
+
       $scope.$apply(function () {
         $scope.tweets.unshift(tweet);
       });

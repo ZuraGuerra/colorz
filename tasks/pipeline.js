@@ -29,6 +29,8 @@ var jsFilesToInject = [
   // Load sails.io before everything else
   'js/dependencies/sails.io.js',
 
+  'js/special-text-handler.js',
+
   'bower_components/lodash/lodash.js',
   'bower_components/angular/angular.js',
   'bower_components/angular-ui-router/release/angular-ui-router.js',
