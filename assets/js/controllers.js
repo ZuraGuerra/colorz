@@ -2,7 +2,43 @@
 
 
   angular.module('colorz').
-    controller('PublicCtrl', ['$scope', '$http', PublicCtrl]);
+    controller('PublicCtrl', ['$scope', '$http', PublicCtrl]).
+    filter('linkURL', [linkURLFilter]).
+    filter ('linkUser', [linkUserFilter]).
+    filter ('linkHashtag', [linkHashtagFilter]).
+    filter ('trustHTML', ['$sce', trustHTMLFilter]);
+
+  function linkURLFilter () {
+    return function (input) {
+
+      return input.morphURL();
+
+    }
+  }
+
+  function linkUserFilter () {
+    return function (input) {
+
+      return input.morphUser();
+
+    }
+  }
+
+  function linkHashtagFilter () {
+    return function (input) {
+
+      return input.morphHashtag();
+
+    }
+  }
+
+  function trustHTMLFilter ($sce) {
+    return function (input) {
+
+      return $sce.trustAsHtml(input);
+
+    }
+  }
 
 
   function PublicCtrl ($scope, $http) {
@@ -27,5 +63,8 @@
     });
 
   }
+
+
+
 
 })();

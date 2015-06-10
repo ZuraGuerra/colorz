@@ -35,7 +35,7 @@
 			</center>
 			
 			<!-- T W E E T -->
-	  		<p class="tweet">{{ tweet.text }}</p>
+	  		<p class="tweet" ng-bind-html="tweet.text | linkURL | linkUser | linkHashtag | trustHTML"></p>
 			<img class= "photo" ng-src="{{ tweet.entities.media[0].media_url }}" alt="{{ hashtag.allgo }}">
 			<p class="rt-fav"><span class="rt">x</span>{{ tweet.retweet_count }}<span class="fav">&#57394;</span>{{ tweet. favorite_count }}</p>
 		
