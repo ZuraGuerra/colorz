@@ -32,8 +32,18 @@ var jsFilesToInject = [
   'js/special-text-handler.js',
 
   'bower_components/lodash/lodash.js',
+  
+
+  'bower_components/jquery/dist/jquery.js',
+  
+  'bower_components/masonry/dist/masonry.pkgd.js',
+  'bower_components/imagesloaded/imagesloaded.js',
+
   'bower_components/angular/angular.js',
   'bower_components/angular-ui-router/release/angular-ui-router.js',
+
+  'bower_components/angular-masonry/angular-masonry.js',
+
 
   'js/dependencies/intense.js',
 

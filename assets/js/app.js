@@ -1,6 +1,6 @@
 +(function () {
 
-  var app = angular.module('colorz', ['ui.router']);
+  var app = angular.module('colorz', ['ui.router', 'wu.masonry']);
 
   app.config(['$stateProvider', '$urlRouterProvider', angularRoutes]);
 

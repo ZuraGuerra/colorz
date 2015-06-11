@@ -54,11 +54,24 @@ h4 {
 	@extend h3;
 }
 
+a {
+	color: $main-color;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
 //			NAVBAR   B E G I N S
 
 .logo {
 	margin-top: 6px;
-	margin-left: 10px;
+	margin-left: 50px;
+	height: 6%;
+	width: 6%;
 }
 
 .margin-right {
@@ -90,12 +103,12 @@ h4 {
 	box-shadow: 1px 1px 1px 1px $light-gray;
 	margin-bottom: 1px;
 	position: fixed;
-	padding-top: 50px;
 	z-index: 10;
-	padding-top: 50px;
 	-webkit-box-shadow: 0 1px 3px 0 transparent;
   	box-shadow: 0 1px 3px 0 transparent;
   	-webkit-transition: all 240ms ease-in-out;
+  	width: 100%;
+  	height: 30px;
 }
 
 .navbar {
@@ -126,18 +139,18 @@ h4 {
 
 .container {
 
-	@include outer-container;
+	//@include outer-container;
 
 	.card {
-		@include span-columns(3);
-		@include omega(4n);
-		display: run-in;
-		vertical-align: bottom;
+		//@include span-columns(3);
+		//@include omega(4n);
+		//display: run-in;
+		//vertical-align: top;
 		width: 320px;
 		background-color: $true-white;
 		
 		box-shadow: 0px 0px 1px 1px $light-gray;
-	    position: relative;
+	    //position: relative;
 	    overflow: hidden;
 	    margin: 20px;
 
@@ -218,6 +231,8 @@ h4 {
 		text-decoration: underline;
 	}
 }
+
+
 
 .rt {
 
