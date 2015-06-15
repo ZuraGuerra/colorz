@@ -62,6 +62,7 @@ a {
 
 a:hover {
 	text-decoration: underline;
+	color: $main-color;
 }
 
 
@@ -207,10 +208,6 @@ a:hover {
 	margin-top: 16px;
 			
 }
-		
-.hexagon a {
-	cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
-}
 
 
 .logo-card {
@@ -248,7 +245,7 @@ a:hover {
 } 
 
 .name{
-	font-size: 1em;
+	font-size: 1.1em;
 }
 
 .user {
@@ -262,6 +259,7 @@ a:hover {
 
 	a:hover {
 		text-decoration: underline;
+		color: $main-color;
 	}
 }
 
