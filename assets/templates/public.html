@@ -14,9 +14,11 @@
 <br>
 
 <!-- C A R D   S P A W N I N G   B E G I N S -->
-<div class="container" masonry preserve-order>
+<div class="units-row container " masonry preserve-order >
 	
-	<div class="card masonry-brick">
+	
+
+	<div class="first card masonry-brick ">
 		<center>
 			<img class="logo-card" src="images/allgo.png" alt="allgo app logo"/>
 		</center>
@@ -29,15 +31,18 @@
 			
 			<!-- U S E R -->
 			<center>
-			<img class="user-photo" src="{{ tweet.user.profile_image_url }}" alt="{{ hashtag }}.allgo" data-title="{{ hashtag }}.allgo" data-caption="allgo está pasando en la ciudad"/>
-			<p class="name">{{ tweet.user.name}}</p>
+			<img class="user-photo hexagon" src="{{ tweet.user.profile_image_url }}" alt="{{ hashtag }}.allgo" data-title="{{ hashtag }}.allgo" data-caption="allgo está pasando en la ciudad"/>
+			<p class="name"><strong>{{ tweet.user.name}}</strong></p>
 			<p class="user"><a href="http://twitter.com/{{ tweet.user.screen_name }}">@{{ tweet.user.screen_name }}</a></p>
 			</center>
 			
 			<!-- T W E E T -->
 	  		<p class="tweet" ng-bind-html="tweet.text | linkURL | linkUser | linkHashtag | trustHTML"></p>
 			<img class= "photo" ng-src="{{ tweet.entities.media[0].media_url }}" alt="{{ hashtag.allgo }}">
-			<p class="rt-fav"><span class="rt">x</span>{{ tweet.retweet_count }}<span class="fav">&#57394;</span>{{ tweet. favorite_count }}</p>
+			
+			<p class="rt-fav"><img src="images/fav-blue.png"><span style="color: white;">-</span><span style="
+	vertical-align: sub;">{{ tweet.retweet_count }}</span><span style="color: white;">---</span><img src="images/rt-blue.png"><span style="color: white;">-</span><span style="
+	vertical-align: sub;">{{ tweet. favorite_count }}</span></p>
 		
 	</div>
 

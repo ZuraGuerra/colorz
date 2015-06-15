@@ -1,7 +1,7 @@
 //	I M P O R T S
 
-@import "bourbon/bourbon";
-@import "neat/neat";
+//@import "bourbon/bourbon";
+//@import "neat/neat";
 
 @import "allgo-fonts";
 // Linea Music: "linea-music" (RT)
@@ -69,7 +69,7 @@ a:hover {
 
 .logo {
 	margin-top: 6px;
-	margin-left: 50px;
+	margin-left: 30%;
 	height: 6%;
 	width: 6%;
 }
@@ -127,15 +127,18 @@ a:hover {
 }
 
 .hashtag-allgo {
+	margin-top: 30px;
+	color: $main-color;
 }
 
 .intro {
-
+	margin-top: 30px;
 }
 
 //			INTRODUCTION    E N D S
 
 //			CARD    B E G I N S
+
 
 .container {
 
@@ -153,7 +156,10 @@ a:hover {
 	    //position: relative;
 	    overflow: hidden;
 	    margin: 20px;
-
+	
+	.first {
+		width:640px;
+	}
 
 		.photo {
 			
@@ -181,6 +187,32 @@ a:hover {
 
 }
 
+.hexagon {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	color: #fff;
+	-webkit-mask-image: url('../images/mask.png');
+	text-align: center;
+			
+}
+
+
+.hexagon .content{
+	height: 40px;
+	width: 40px;
+	margin: auto;
+	margin-top: 16px;
+			
+}
+		
+.hexagon a {
+	cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
+}
+
+
 .logo-card {
 	height: 15%;
 	width: 15%;
@@ -196,6 +228,8 @@ a:hover {
 	color: $true-black;
 	font-size: 1em;
 	font-family: avenir-light;
+	text-align: center;
+	padding-top:5px;
 }
 
 .tweet {
@@ -214,7 +248,6 @@ a:hover {
 } 
 
 .name{
-	color: $main-color;
 	font-size: 1em;
 }
 

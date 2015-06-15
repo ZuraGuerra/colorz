@@ -16,8 +16,8 @@
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
   //'styles/**/*.scss'
-  'styles/kube.min.css',
-  'styles/importer.css'
+  'styles/kube.css',
+  'styles/importer.css',
   
 ];
 
@@ -37,7 +37,9 @@ var jsFilesToInject = [
   'bower_components/jquery/dist/jquery.js',
   
   'bower_components/masonry/dist/masonry.pkgd.js',
+  'js/dependencies/packery.pkgd.js',
   'bower_components/imagesloaded/imagesloaded.js',
+
 
   'bower_components/angular/angular.js',
   'bower_components/angular-ui-router/release/angular-ui-router.js',
