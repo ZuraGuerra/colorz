@@ -1,0 +1,24 @@
+<title>admin.allgo</title>
+
+<div class="true-white-bg">
+	<center>
+	<br>
+	<h1 class="hashtag-allgo">{{ hashtag }}.allgo</h1>
+	<h2 class="intro">{{ intro }} </h2>
+	<br>
+	</center>
+</div>
+
+<form class="forms" ng-submit="login()">
+    <label>
+        Email
+        <input type="email" ng-model="email" name="user-email" class="width-50" />
+    </label>
+    <label>
+        Password
+        <input type="password" ng-model="password" name="user-password" class="width-50" />
+    </label>
+    <p>
+        <button class="btn-blue" type="submit">Log in</button>
+    </p>
+</form>

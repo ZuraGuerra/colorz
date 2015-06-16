@@ -1,0 +1,41 @@
+<title>hashtag.allgo</title>
+
+<div class="true-white-bg">
+	<center>
+	<br>
+	<h1 class="hashtag-allgo">{{ hashtag }}.allgo</h1>
+	<h2 class="intro">{{ intro }} </h2>
+	<br>
+	</center>
+</div>
+
+<form class="forms" ng-submit="setHashtag()">
+    <label>
+        Hashtag
+        <input type="text" ng-model="hashtag" name="hashtag" class="width-50" />
+    </label>
+    <p>
+        <button class="btn-blue" type="submit">Set Hashtag</button>
+    </p>
+</form>
+
+<form class="forms" ng-submit="setIntro()">
+
+    <label>
+        Intro
+        <input type="text" ng-model="intro" name="intro" class="width-50" />
+    </label>
+    <p>
+        <button class="btn-blue" type="submit">Set Hashtag</button>
+    </p>
+</form>
+
+<form class="forms" ng-submit="setRules()">
+    <label>
+        Rules
+        <input type="text" ng-model="rules" name="rules" class="width-50" />
+    </label>
+    <p>
+        <button class="btn-blue" type="submit">Set Hashtag</button>
+    </p>
+</form>

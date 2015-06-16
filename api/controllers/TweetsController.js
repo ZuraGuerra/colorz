@@ -96,7 +96,7 @@ twitterSubscribe();
 module.exports = {
   setHashtag: function (req, res) {
     // SET NEW HASHTAG
-    var hashtag = 'devsgonnadev'; //New hashtag goes here req.params.hashtag
+    var hashtag = req.body.hashtag; //New hashtag goes here req.body.hashtag
 
 
     // cancel previous twitter subscription
@@ -110,6 +110,25 @@ module.exports = {
     res.json({ok: true});
   },
 
+  setIntro: function (req, res) {
+    var intro = req.body.intro;
+    Persist.setItem('intro', intro);
+  },
+
+  setRules: function (req, res) {
+    var rules = req.body.rules;
+    Persist.setItem('rules', rules);
+  },
+
+  info: function (req, res) {
+    var info = {
+      hashtag: Persist.getItem('hashtag'),
+      intro: Persist.getItem('intro'),
+      rules: Persist.getItem('rules')
+    }
+
+    res.json(info);
+  },
   // SEARCH API QUERY
   // SEE THE JSON AT hashtag.allgo.mx/tweets/list
   // !!! PLEASE NOTE THAT IT CONSUMES TWEETS FROM LAST WEEK ONLY !!!

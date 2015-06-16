@@ -16,6 +16,18 @@
       url: "/",
       controller: 'PublicCtrl',
       template: JST['assets/templates/public.html']()
+    })
+
+    .state('admin', {
+      url: "/admin",
+      controller: 'AdminCtrl',
+      template: JST['assets/templates/admin.html']()
+    })
+
+    .state('hashtag', {
+      url: "/hashtag",
+      controller: 'HashtagCtrl',
+      template: JST['assets/templates/hashtag.html']()
     });
 
   }
