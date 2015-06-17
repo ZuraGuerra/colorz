@@ -1,5 +1,6 @@
 <title>hashtag.allgo</title>
 
+<!-- I N T R O D U C T I O N  B E G I N S-->
 <div class="true-white-bg">
 	<center>
 	<br>
@@ -8,34 +9,55 @@
 	<br>
 	</center>
 </div>
+<!-- I N T R O D U C T I O N  E N D S-->
 
-<form class="forms" ng-submit="setHashtag()">
+<br>
+<br>
+
+<!-- A D M I N  B E G I N S-->
+<center>
+<form class="forms admin" ng-submit="setHashtag()">
     <label>
         Hashtag
+        <br>
+        <span class="admin-desc">Deletes the current database and creates a new one with the search of the new hashtag.</span>
         <input type="text" ng-model="hashtag" name="hashtag" class="width-50" />
     </label>
     <p>
-        <button class="btn-blue" type="submit">Set Hashtag</button>
+        <button class="btn btn-blue btn-outline" type="submit">Reset Hashtag</button>
     </p>
 </form>
 
-<form class="forms" ng-submit="setIntro()">
+<br>
+
+<form class="forms admin" ng-submit="setIntro()">
 
     <label>
-        Intro
+        Introduction
+        <br>
+        <span class="admin-desc">The text under #.allgo.
         <input type="text" ng-model="intro" name="intro" class="width-50" />
     </label>
     <p>
-        <button class="btn-blue" type="submit">Set Hashtag</button>
+        <button class="btn btn-blue btn-outline" type="submit">Save</button>
     </p>
 </form>
 
-<form class="forms" ng-submit="setRules()">
+<br>
+
+<form class="forms admin" ng-submit="setRules()">
     <label>
-        Rules
-        <input type="text" ng-model="rules" name="rules" class="width-50" />
+        Contest Rules
+        <br>
+        <span class="admin-desc">The contest rules will be displayed at hashtag.allgo.mx/#/rules.
+        <textarea ng-model="rules" name="rules" class="width-50" rows="10"></textarea>
     </label>
     <p>
-        <button class="btn-blue" type="submit">Set Hashtag</button>
+        <button class="btn btn-blue btn-outline" type="submit">Save</button>
     </p>
 </form>
+</center>
+<!-- A D M I N  E N D S-->
+
+<br>
+<br>

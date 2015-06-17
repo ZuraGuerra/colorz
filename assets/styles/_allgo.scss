@@ -281,7 +281,6 @@ a:hover {
 
 .rt {
 
-	font-family: linea-music;
 	font-size: 1.6em;
 	color: $light-gray;
 
@@ -289,9 +288,26 @@ a:hover {
 
 .fav {
 
-	font-family: linea-weather;
 	font-size: 1.6em;
 	color: $light-gray;
 }
 
 //			CARD    E N D S
+
+//			ADMIN	B E G I N S
+
+.admin {
+	font-family: avenir-light;
+
+	.label {
+		color: $main-color;
+	}
+	
+}
+
+.admin-desc {
+	top: -5px;
+	font-size: 0.7em;
+}
+
+//			ADMIN	E N D S
