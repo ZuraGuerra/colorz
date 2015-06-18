@@ -111,7 +111,7 @@
       console.log("Sails Backend responded: ", response);
       $scope.hashtag = response.data.hashtag;
       $scope.intro = response.data.intro;
-      $scope.rules = responde.data.rules;
+      $scope.rules = response.data.rules;
     });
 
 
