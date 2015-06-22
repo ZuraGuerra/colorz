@@ -28,6 +28,7 @@ $light-gray: #ADADAD; // light gray
 	width: 2.5%;
 }
 
+
 .main_h {
   position: fixed;
   top: 0px;
@@ -57,6 +58,15 @@ $light-gray: #ADADAD; // light gray
 			ul {
 				li {
 					text-align:center;
+					margin-left: none;
+					
+					a {
+						-webkit-font-smoothing: antialiased;
+					}
+
+
+					
+
 				}
 			}
 		}
@@ -101,13 +111,17 @@ nav ul {
     margin-bottom: 22px;
     float: left;
     text-align: center;
-    width: 100%;
+    width: 95%;
   }
 }
 nav ul li {
   display: inline-block;
   margin-left: 35px;
   line-height: 1.5;
+}
+
+nav ul li a {
+	-webkit-font-smoothing: antialiased;
 }
 @media only screen and (max-width: 766px) {
   nav ul li {
@@ -139,7 +153,7 @@ nav ul a {
   }
 
   .logo-mobile {
-  	margin-top: -22px;
+  	margin-top: -20px;
 	margin-left: 50%;
 	height: 5%;
 	width: 5%;
@@ -164,11 +178,6 @@ nav ul a {
 }
 
 
-p {
-  margin-bottom: 20px;
-  font-size: 17px;
-  line-height: 2;
-}
 
 .content {
   padding: 50px 2% 250px;
@@ -314,10 +323,9 @@ h4 {
 
 .descarga {
 	@extend .links-nav;
-	border: 5px;
-	border-color: $true-white;
 
 }
+
 
 .blue-bg {
 	background-color: $main-color;
@@ -404,6 +412,8 @@ nav {
 .container {
 
 	//@include outer-container;
+	position: inherit;
+
 
 	.card {
 		//@include span-columns(3);
@@ -621,3 +631,19 @@ nav {
 }
 
 //			ADMIN	E N D S
+
+//			CONTEST   B E G I N S
+
+p {
+  font-size: 0.8em;
+  color: $true-black;
+  padding: 40px;
+
+}
+
+.contest-card {
+	width: 320px;
+	
+}
+
+//			CONTEST   E N D S
