@@ -5,6 +5,7 @@
     controller('PublicCtrl', ['$scope', '$http', PublicCtrl]).
     controller('AdminCtrl', ['$scope', '$http', '$state', 'AuthService', AdminCtrl]).
     controller('HashtagCtrl', ['$scope', '$http', 'AuthService', '$state', HashtagCtrl]).
+    controller('ContestCtrl', ['$scope', '$http', 'AuthService', '$state', ContestCtrl]).
     service('AuthService', AuthService).
     filter('linkURL', [linkURLFilter]).
     filter ('linkUser', [linkUserFilter]).
@@ -126,6 +127,19 @@
     $scope.setRules = function() {
       $http.post('/tweets/setRules', { rules: $scope.rules })
     }
+    
+  }
+
+  function ContestCtrl ($scope, $http, AuthService, $state) {
+    
+
+    $http.get('/tweets/info').then(function (response) {
+      console.log("Sails Backend responded: ", response);
+      $scope.hashtag = response.data.hashtag;
+      $scope.intro = response.data.intro;
+      $scope.rules = response.data.rules;
+    });
+
     
   }
 

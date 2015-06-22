@@ -24,6 +24,12 @@
       template: JST['assets/templates/admin.html']()
     })
 
+    .state('contest', {
+      url: "/contest",
+      controller: 'ContestCtrl',
+      template: JST['assets/templates/contest.html']()
+    })
+
     .state('hashtag', {
       url: "/hashtag",
       controller: 'HashtagCtrl',
