@@ -23,7 +23,7 @@ $light-gray: #ADADAD; // light gray
 
 .logo {
 	margin-top: -13px;
-	margin-left: 30%;
+	margin-left: 2%;
 	height: 2.5%;
 	width: 2.5%;
 }
@@ -139,6 +139,7 @@ nav ul a {
   display: none;
   cursor: pointer;
   font-size: 20px;
+  margin-top: -5px;
   position: absolute;
   right: 22px;
   top: 0;
@@ -160,13 +161,13 @@ nav ul a {
   }
 }
 .mobile-toggle span {
-  width: 30px;
-  height: 4px;
-  margin-bottom: -2px;
-  border-radius: 5000px;
+  width: 20px;
+  height: 3px;
+  margin-bottom: -8px;
+  //border-radius: 5000px;
   background: $true-white;
   display: block;
-  margin-top: -8px;
+  //margin-top: -6px;
 }
 
 .row {
@@ -393,8 +394,8 @@ nav {
 
 .intro {
 	margin-top: 30px;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 .rules {
@@ -418,8 +419,8 @@ nav {
 	.card {
 		//@include span-columns(3);
 		//@include omega(4n);
-		//display: run-in;
-		//vertical-align: top;
+		display: run-in;
+		vertical-align: top;
 		width: 320px;
 		background-color: $true-white;
 		
@@ -427,6 +428,7 @@ nav {
 	    //position: relative;
 	    overflow: hidden;
 	    margin: 20px;
+	    margin-left: 40px;
 	
 		.first {
 			width:640px;
@@ -551,6 +553,7 @@ nav {
 
 .user {
 	margin-top:-30px;
+	margin-bottom: 10px;
 
 	a {
 		color: $main-color;
@@ -608,7 +611,7 @@ nav {
 }
 
 .rt-fav {
-	margin-top: 10px;
+	margin-top: 8px;
 	margin-bottom: 13px;
 }
 
@@ -634,7 +637,7 @@ nav {
 
 //			CONTEST   B E G I N S
 
-p {
+.contest {
   font-size: 0.8em;
   color: $true-black;
   padding: 40px;
@@ -643,6 +646,8 @@ p {
 
 .contest-card {
 	width: 320px;
+	margin-top: -50px;
+	padding-top: -50px;
 	
 }
 
