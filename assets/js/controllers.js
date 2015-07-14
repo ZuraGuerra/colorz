@@ -14,33 +14,29 @@
 
   function linkURLFilter () {
     return function (input) {
-
+      if (!input) return;
       return input.morphURL();
-
     }
   }
 
   function linkUserFilter () {
     return function (input) {
-
+      if (!input) return;
       return input.morphUser();
-
     }
   }
 
   function linkHashtagFilter () {
     return function (input) {
-
+      if (!input) return;
       return input.morphHashtag();
-
     }
   }
 
   function trustHTMLFilter ($sce) {
     return function (input) {
-
+      if (!input) return;
       return $sce.trustAsHtml(input);
-
     }
   }
 
