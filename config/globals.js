@@ -10,6 +10,8 @@
  */
 module.exports.globals = {
 
+  hookTimeout: 30000,
+
   /****************************************************************************
   *                                                                           *
   * Expose the lodash installed in Sails core as a global variable. If this   *
