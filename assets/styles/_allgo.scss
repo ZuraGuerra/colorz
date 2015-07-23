@@ -289,7 +289,7 @@ body {
 }
 
 h1 {
-	font-family: avenir-medium;
+	font-family: avenir-medium, Arial, sans-serif;
 	font-size: 1.1em;
 	margin-bottom: 10px;
 	font-weight: 500;
@@ -297,7 +297,7 @@ h1 {
 }
 
 h2 {
-	font-family: avenir-light;
+	font-family: avenir-light, Arial, sans-serif;
 	font-size: 0.8em;
 	font-weight: 500;
 	margin-left: 18%;
@@ -306,7 +306,7 @@ h2 {
 
 h3 {
 	text-align: center;
-	font-family: avenir-light;
+	font-family: avenir-light, Arial, sans-serif;
 	color: $main-color;
 	margin-left: 15px;
 	margin-right: 15px;
@@ -347,7 +347,7 @@ h4 {
 	background-color: $main-color;
 	color: $true-white;
 	font-size: 0.6em;
-	font-family: avenir-light;
+	font-family: avenir-light, Arial, sans-serif;
 	box-shadow: 1px 1px 1px 1px $light-gray;
 	margin-bottom: 1px;
 	position: fixed;
@@ -429,7 +429,7 @@ nav {
 
 	//@include outer-container;
 	position: inherit;
-	margin-left: 5% !important;
+	margin-left: 5%;
 	// margin-right: 5% !important;
 
 
@@ -544,7 +544,7 @@ nav {
 .rt-fav {
 	color: $true-black;
 	font-size: 1em;
-	font-family: avenir-light;
+	font-family: avenir-light, Arial, sans-serif;
 	text-align: center;
 	padding-top:5px;
 }
@@ -637,7 +637,7 @@ nav {
 //			ADMIN	B E G I N S
 
 .admin {
-	font-family: avenir-light;
+	font-family: avenir-light, Arial, sans-serif;
 
 	.label {
 		color: $main-color;
