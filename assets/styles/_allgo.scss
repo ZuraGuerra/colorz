@@ -25,6 +25,15 @@ $light-gray: #ADADAD; // light gray
 	width: 2.5%;
 }
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) {
+	.container {
+		margin-right: -5% !important; 
+	}
+
+ }
 
 .main_h {
   position: fixed;
@@ -44,6 +53,10 @@ $light-gray: #ADADAD; // light gray
 @media only screen and (max-width: 766px) {
   .main_h {
     padding-top: 25px;
+  }
+
+  .container {
+  	margin-right: -5% !important;
   }
 }
 
